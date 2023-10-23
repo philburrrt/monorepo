@@ -35,6 +35,9 @@ importers:
 
   src/test:
     devDependencies:
+      '@types/node':
+        specifier: ^20.8.7
+        version: 20.8.7
       db:
         specifier: workspace:*
         version: link:../../lib/db

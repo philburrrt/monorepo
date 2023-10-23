@@ -5,14 +5,16 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "start": "node dist/index.js",
+    "start": "npm run env -- node dist/index.js",
+    "env": "dotenv -e ../../.env",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "typescript": "^5.2.2",
-    "db": "workspace:*"
+    "@types/node": "^20.8.7",
+    "db": "workspace:*",
+    "typescript": "^5.2.2"
   }
 }
