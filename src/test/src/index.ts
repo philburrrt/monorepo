@@ -1,1 +1,3 @@
-console.log("hi");
+import * as schema from "db";
+
+console.log("schema: ", schema);

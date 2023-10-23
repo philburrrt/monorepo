@@ -35,6 +35,9 @@ importers:
 
   src/test:
     devDependencies:
+      db:
+        specifier: workspace:*
+        version: link:../../lib/db
       typescript:
         specifier: ^5.2.2
         version: 5.2.2
