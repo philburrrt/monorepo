@@ -1,0 +1,27 @@
+{
+  "name": "db",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "_db:push": "pnpm run env -- drizzle-kit push:mysql --driver=mysql2 --schema=./src/schema.ts --connectionString=$DATABASE_URL",
+    "build": "pnpm run env -- tsc",
+    "db:push": "pnpm run env -- pnpm run _db:push",
+    "dev": "pnpm run env -- tsc -w",
+    "env": "dotenv -e ../../.env"
+  },
+  "dependencies": {
+    "@planetscale/database": "^1.11.0",
+    "drizzle-orm": "^0.28.6",
+    "mysql2": "^3.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.7",
+    "dotenv-cli": "^7.3.0",
+    "drizzle-kit": "^0.19.13",
+    "typescript": "^5.2.2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
