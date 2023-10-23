@@ -5,9 +5,10 @@
     "build": {
       "dependsOn": ["^build"],
       "outputs": ["dist/**"],
-      "env": ["TEST_VAR"]
+      "env": ["TEST_VAR", "DATABASE_URL"]
     },
     "start": {
+      "cache": false,
       "dependsOn": ["build", "^start"],
       "outputs": ["dist/**"],
       "env": ["TEST_VAR"]
