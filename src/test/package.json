@@ -13,8 +13,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^20.8.7",
-    "db": "workspace:*",
-    "typescript": "^5.2.2"
+    "@planetscale/database": "^1.11.0",
+    "db": "workspace:^",
+    "drizzle-orm": "^0.28.6",
+    "ethers": "^6.8.0",
+    "mysql2": "^3.6.2"
   }
 }
