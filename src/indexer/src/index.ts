@@ -1,6 +1,8 @@
 import { db } from "./db";
 import { test } from "db";
 
-const main = async () => {};
+const main = async () => {
+  console.log("Hello World");
+};
 
 main();

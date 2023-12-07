@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "start": "npm run env -- node dist/index.js",
+    "_start": "npm run env -- node dist/index.js",
+    "start": "pnpm build && pnpm _start",
+    "dev": "nodemon --watch src ext ts --exec \"pnpm build && pnpm _start\"",
     "env": "dotenv -e ../../.env",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
