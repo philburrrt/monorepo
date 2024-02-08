@@ -2,7 +2,7 @@
   "name": "db",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.ts",
+  "main": "src/index.js",
   "scripts": {
     "_db:push": "pnpm run env -- drizzle-kit push:mysql --driver=mysql2 --schema=./src/schema.ts --connectionString=$DATABASE_URL",
     "build": "pnpm run env -- tsc",
